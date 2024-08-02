@@ -87,6 +87,10 @@ exec zsh
         ```
         where the `strategy*` strategies are the strategies shipped with `zsh-autosuggestions` or provided by some other plugin you use.
 
+## Limitations
+
+Matches in command position; global abbreviations are only matched in command position.
+
 ## Exported values
 
 `ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION` is the `zsh-autosuggestions-abbreviation-strategy` version number.

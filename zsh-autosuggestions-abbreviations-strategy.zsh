@@ -2,10 +2,10 @@
 
 # zsh plugin to add your zsh-abbr abbreviations to zsh-autosuggestions' suggestions
 # https://github.com/olets/zsh-autosuggestions-abbreviations-strategy
-# v1.0.0
+# v1.1.0
 # Copyright (c) 2024 Henry Bley-Vroman
 
-typeset -ir ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.0.0s
+typeset -ir ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.1.0
 typeset -ir ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_RELEASE_DATE="August 1, 2024"
 
 # Name depends on https://github.com/zsh-users/zsh-autosuggestions/blob/master/zsh-autosuggestions.zsh#L747

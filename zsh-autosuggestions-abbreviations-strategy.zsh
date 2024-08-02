@@ -5,8 +5,8 @@
 # v1.1.0
 # Copyright (c) 2024 Henry Bley-Vroman
 
-typeset -ir ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.1.0
-typeset -ir ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_RELEASE_DATE="August 1, 2024"
+typeset -r ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.1.1
+typeset -r ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_RELEASE_DATE="August 1, 2024"
 
 # Name depends on https://github.com/zsh-users/zsh-autosuggestions/blob/master/zsh-autosuggestions.zsh#L747
 _zsh_autosuggest_strategy_abbreviations() {

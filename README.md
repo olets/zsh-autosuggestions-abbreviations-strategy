@@ -49,6 +49,25 @@ exec zsh
 1. Install `zsh-autosuggestions`
 1. Install `zsh-autosuggestions-abbreviation-strategy`
 1. Configure `zsh-autosuggestions`'s `ZSH_AUTOSUGGEST_STRATEGY`. Do one of:
+    - **Recommended**. To suggest abbrevations _before_ `zsh-autosuggestions`'s default suggestions, append `abbreviations`:
+        ```shell
+        # .zshrc
+        
+        # load zsh-abbr
+        # load zsh-autosuggestions
+        # load zsh-autosuggestions-abbreviation-strategy
+        ZSH_AUTOSUGGEST_STRATEGY=( abbreviations $ZSH_AUTOSUGGEST_STRATEGY )
+        ```
+    - **Recommended**. To suggest abbreviations along with other things, in the order of your choosing. _I recommed putting `abbreviations` first_. For example:
+        ```shell
+        # .zshrc
+        
+        # load zsh-abbr
+        # load zsh-autosuggestions
+        # load zsh-autosuggestions-abbreviation-strategy
+        ZSH_AUTOSUGGEST_STRATEGY=( abbreviations strategy1 strategy2 )
+        ```
+        where the `strategy*` strategies are the strategies shipped with `zsh-autosuggestions` or provided by some other plugin you use.
     - To suggest abbreviations _after_ `zsh-autosuggestions`'s default suggestions, append `abbreviations`:
         ```shell
         # .zshrc
@@ -57,15 +76,6 @@ exec zsh
         # load zsh-autosuggestions
         # load zsh-autosuggestions-abbreviation-strategy
         ZSH_AUTOSUGGEST_STRATEGY+=( abbreviations )
-        ```
-    - To suggest abbrevations _before_ `zsh-autosuggestions`'s default suggestions, append `abbreviations`:
-        ```shell
-        # .zshrc
-        
-        # load zsh-abbr
-        # load zsh-autosuggestions
-        # load zsh-autosuggestions-abbreviation-strategy
-        ZSH_AUTOSUGGEST_STRATEGY=( abbreviations $ZSH_AUTOSUGGEST_STRATEGY )
         ```
     - To only suggest abbreviations:
         ```shell
@@ -76,16 +86,6 @@ exec zsh
         # load zsh-autosuggestions-abbreviation-strategy
         ZSH_AUTOSUGGEST_STRATEGY=( abbreviations )
         ```
-    - To suggest abbreviations along with other things, in the order of your choosing, do something like:
-        ```shell
-        # .zshrc
-        
-        # load zsh-abbr
-        # load zsh-autosuggestions
-        # load zsh-autosuggestions-abbreviation-strategy
-        ZSH_AUTOSUGGEST_STRATEGY=( strategy1 strategy2 abbreviations strategy3 )
-        ```
-        where the `strategy*` strategies are the strategies shipped with `zsh-autosuggestions` or provided by some other plugin you use.
 
 ## Limitations
 

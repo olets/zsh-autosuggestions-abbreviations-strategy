@@ -2,7 +2,7 @@
 
 # zsh plugin to add your zsh-abbr abbreviations to zsh-autosuggestions' suggestions
 # https://github.com/olets/zsh-autosuggestions-abbreviations-strategy
-# v1.1.0
+# v1.1.1
 # Copyright (c) 2024 Henry Bley-Vroman
 
 typeset -r ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.1.1

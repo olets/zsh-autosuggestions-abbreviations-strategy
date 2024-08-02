@@ -1,3 +1,12 @@
+# [1.1.1](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/compare/v1.1.0...v1.1.1) (2024-08-02)
+
+
+### Bug Fixes
+
+* **exported vars:** correct type ([2ba545d](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/commit/2ba545dad21778edf39505c63c378f4a3d47ac92))
+
+
+
 # [1.1.0](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/compare/v1.0.0...v1.1.0) (2024-08-02)
 
 

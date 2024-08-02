@@ -22,9 +22,9 @@ _zsh_autosuggest_strategy_abbreviations() {
   # Exit if our search string matches the ignore pattern
   [[ -n "$ZSH_AUTOSUGGEST_COMPLETION_IGNORE" ]] && [[ "$1" == $~ZSH_AUTOSUGGEST_COMPLETION_IGNORE ]] && return
 
-  # DUPE https://github.com/zsh-users/zsh-autosuggestions/blob/c3d4e576c9c86eac62884bd47c01f6faed043fc5/zsh-autosuggestions.zsh#L646-L650
   # Escape backslashes and all of the glob operators so we can use
-	# this string as a pattern to search the $history associative array.
+	# this string as a pattern.
+  # DUPE https://github.com/zsh-users/zsh-autosuggestions/blob/c3d4e576c9c86eac62884bd47c01f6faed043fc5/zsh-autosuggestions.zsh#L648-L650
 	# - (#m) globbing flag enables setting references for match data
 	# TODO: Use (b) flag when we can drop support for zsh older than v5.0.8
 	local prefix="${1//(#m)[\\*?[\]<>()|^~#]/\\$MATCH}"

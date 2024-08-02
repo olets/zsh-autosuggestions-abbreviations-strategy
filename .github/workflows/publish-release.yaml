@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  release:
+    types: [released]
+jobs:
+  homebrew:
+    name: Bump Homebrew formula
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bump primary formula
+        uses: mislav/bump-homebrew-formula-action@b3327118b2153c82da63fd9cbf58942146ee99f0 # v3.1
+        with:
+          formula-name: zsh-autosuggestions-abbreviations-strategy
+          formula-path: zsh-autosuggestions-abbreviations-strategy.rb
+          homebrew-tap: olets/homebrew-tap
+          commit-message: |
+            feat({{formulaName}}): publish {{version}}
+
+            Created by https://github.com/mislav/bump-homebrew-formula-action
+        env:
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}

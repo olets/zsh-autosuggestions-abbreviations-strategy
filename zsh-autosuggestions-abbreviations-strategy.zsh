@@ -5,8 +5,8 @@
 # v1.1.1
 # Copyright (c) 2024 Henry Bley-Vroman
 
-typeset -r ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.1.1
-typeset -r ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_RELEASE_DATE="August 1, 2024"
+typeset -g ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_VERSION=v1.1.1
+typeset -g ZSH_AUTOSUGGESTIONS_ABBREVIATIONS_STRATEGY_RELEASE_DATE="August 1, 2024"
 
 # Name depends on https://github.com/zsh-users/zsh-autosuggestions/blob/master/zsh-autosuggestions.zsh#L747
 _zsh_autosuggest_strategy_abbreviations() {
@@ -17,7 +17,7 @@ _zsh_autosuggest_strategy_abbreviations() {
   # DUPE https://github.com/zsh-users/zsh-autosuggestions/blob/c3d4e576c9c86eac62884bd47c01f6faed043fc5/zsh-autosuggestions.zsh#L643-L644
   # Enable globbing flags so that we can use (#m) and (x~y) glob operator
   setopt EXTENDED_GLOB
-  
+
   # DUPE https://github.com/zsh-users/zsh-autosuggestions/blob/c3d4e576c9c86eac62884bd47c01f6faed043fc5/zsh-autosuggestions.zsh#L605-L606
   # Exit if our search string matches the ignore pattern
   [[ -n "$ZSH_AUTOSUGGEST_COMPLETION_IGNORE" ]] && [[ "$1" == $~ZSH_AUTOSUGGEST_COMPLETION_IGNORE ]] && return

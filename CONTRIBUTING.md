@@ -13,7 +13,6 @@ Check the [Issues](https://github.com/olets/zsh-autosuggestions-abbreviations-st
 1. Checkout the branch `main`
 1. Update all instances of the version number in `zsh-autosuggestions-abbreviations-strategy.zsh`
 1. Update all instances of the release date in `zsh-autosuggestions-abbreviations-strategy.zsh`
-1. Update the year in the copyright line in `zsh-autosuggestions-abbreviations-strategy.zsh` if applicable.
 1. Run `bin/changelog`
 1. Update the first line of `CHANGELOG.md`: add the new version number twice:
     ```

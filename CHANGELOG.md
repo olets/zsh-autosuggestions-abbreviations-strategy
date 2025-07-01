@@ -1,3 +1,11 @@
+# [1.1.2](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/compare/v1.1.1...v1.1.2) (2025-06-30)
+
+
+### Bug Fixes
+
+* **exported variables:** support sourcing zshrc [[#3](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/issues/3)] ([f3ed329](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/commit/f3ed32969ae793014979e5ea41c34710d1b2adbe))
+
+
 # [1.1.1](https://github.com/olets/zsh-autosuggestions-abbreviations-strategy/compare/v1.1.0...v1.1.1) (2024-08-02)
 
 
